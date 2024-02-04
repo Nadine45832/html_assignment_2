@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Nadzeya Tumarava - student # 301446447-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./static/favicon.png" >
+    <title>Website about Endangered species</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            --logo-shift: 70px;
+            --logo-width: 140px;
+            background-color: aliceblue;
+        }
+        h2 {
+            text-shadow: 4px 4px 0 rgba(0,0,0,.07);
+            color: #444;
+        }
+        h3 {
+            color: red;
+            text-shadow: 4px 4px 0 rgba(0,0,0,.07);
+        }
+        h4 {
+            text-shadow: 4px 4px 0 rgba(0,0,0,.07);
+            color: #444;
+            text-decoration: underline;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        footer {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+        .head-pict {
+            width: 100%;
+        }
+        .nav-item {
+            background-color: #030000;
+            margin: 0;
+            width: 100%;
+            position: relative;
+        }
+        .main-header {
+            font-size: 50px;
+            color: #FFF;
+            margin: 0;
+            padding-top: 4em;
+            padding-left: 1em;
+            position: absolute;
+            top: 0;
+            font-weight: 800;
+        }
+        .head-block {
+            position: relative;
+        }
+        .nav-pict {
+            height: 180px;
+            width: var(--logo-width, 140px);
+            position: absolute;
+            top: 0;
+            left: var(--logo-shift, 70px);
+            border: solid 2px #222;
+            border-top: none;
+            z-index: 2;
+        }
+        .nav-primary {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin: 0;
+            margin-left: calc(var(--logo-shift) + var(--logo-width));
+            padding: 2rem 2rem;
+        }
+        .nav-element {
+            list-style: none;
+        }
+        .nav-link {
+            font-size: 18px;
+            color: #FFF;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 12px 10px;
+            text-align: center;
+            display: block;
+        }
+
+        .nav-link:hover, .nav-link:focus {
+            cursor: pointer;
+            background-color: #f4f2f278;
+            outline: none; 
+        }
+        .page-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        .page-title-line {
+            height: 2px;
+            flex: 1 1 auto;
+            color: #444;
+        }
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 5rem;
+        }
+        .content-image {
+            width: 800px;
+        }
+        .description-content {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            background-color: #FFF;
+            width: 500px;
+            padding: 1.5rem;
+            position: absolute;
+            z-index: 1;
+            color: #444;
+            text-align: justify;
+            margin: auto;
+            font-size: 14px;
+            bottom: -40px;
+        }
+        .second-content {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex: 1 1 auto;
+        }
+        .img-habitat {
+            width: 500px;
+            padding-bottom: 2rem;
+        }
+        .second-content-text {
+            width: 50%;
+            color: #444;
+            text-align: justify;
+            font-size: 16px;
+        }
+        .threats {
+            background-color: #222;
+            padding: 1rem 2rem;
+        }
+        .threats-header {
+            color: #FFF;
+        }
+        .img-threats {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+        .threats-text {
+            color: #FFF;
+            text-align: justify;
+        }
+        .threaths-text-border {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border: solid 2px #fff;
+            padding: 1rem 2rem;
+        }
+
+        .danger-content-text {
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+            padding: 2rem 2rem;
+        }
+        .image-threats-content {
+            width: 100%;
+        }
+        .faq-content {
+            padding: 0 3rem;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border: solid 2px #222;
+            border-style: double;
+            margin: 0 2rem;
+            margin-bottom: 1rem;
+
+        }
+        .img-faq {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            padding: 1rem 0;
+        }
+        .answer {
+            color: #222;
+            text-align: justify;
+        }
+        .wwf-logo {
+            width: 28px;
+        }
+
+    </style>
+    
+</head>
+    <nav class="nav-item">
+        <a href="https://www.fisheries.noaa.gov/species/narwhal">
+            <img class="nav-pict" src="./static/narva-nav.jpg" alt="A narwhal swimming" >
+        </a>
+        <ul class="nav-primary" >
+            <li class="nav-element">
+                <a href="https://en.wikipedia.org/wiki/Narwhal" class="nav-link" target="_blank">
+                    ABOUT US
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="https://protect.worldwildlife.org/page/52717/donate/1?en_og_source=Web_Donation&ea.tracking.id=Web_Topnav&supporter.appealCode=AWE2402OQ18299A01179RX&_gl=1*cc8xiv*_ga*MTk4NDM5NzEzMy4xNzA2OTg2NTY5*_ga_FK6M9RK84Z*MTcwNjk4OTIxMi4yLjAuMTcwNjk4OTIxMi42MC4wLjA.*_gcl_au*MTgyMDc1NTEyMC4xNzA2OTg2NTY5&_ga=2.125150413.694852541.1706986574-1984397133.1706986569" class="nav-link" target="_blank">
+                    GET INVOLED
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="https://www.nwf.org/en/Get-Involved" class="nav-link" target="_blank">
+                    TAKE ACTION
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="https://awionline.org/content/list-endangered-species" class="nav-link" target="_blank">
+                    MORE ENDANGERED SPECIES
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="https://www.youtube.com/watch?v=YO58kt-jETA" class="nav-link" target="_blank">
+                    VIDEO
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/narwhal.aspx?sc=AWY1800OQ18317A01909RX&_ga=2.256058763.1281099599.1706986949-53151609.1706986949&_gl=1*1mgweuw*_ga*NTMxNTE2MDkuMTcwNjk4Njk0OQ..*_ga_FK6M9RK84Z*MTcwNjk5MDQwNC4yLjAuMTcwNjk5MDQwNC42MC4wLjA.*_gcl_au*MjEwNzUzNjI2MS4xNzA2OTg2OTQ5" class="nav-link" target="_blank">
+                    ADOPT
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="./index.html" class="nav-link" target="_blank">
+                    ASSIGMENT#1
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="head-block">
+        <img  class="head-pict" src="./static/narvas1.jpg" alt="A group of narwhals swimming together">
+        <h1 class="main-header">UNICORN OF THE SEA</h1>
+    </div>
+<body>
+
+    <main>
+        <div>
+            <div class="page-title">
+                <hr class="page-title-line">
+                <h2>WHY THEY MATTER</h2>
+                <hr class="page-title-line">
+            </div>
+            <div class="image-container">
+                <img class="content-image" src="./static/narvas2.jpg" alt="A group of narwhals swimming together" >
+                <p class="description-content">
+                    Whales, like the narwhal, are at the top of the food chain and have an important role in the overall health of the marine environment. Narwhals are also culturally important to indigenous communities in the Arctic. Like polar bears, the narwhal depends on sea ice for its existence and can be directly impacted by climate change.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="page-title">
+                <hr class="page-title-line">
+                <h2>ABOUT NARVALS</h2>
+                <hr class="page-title-line">
+            </div>
+            <div class="second-content">
+                <div class="second-content-text">
+                    <p>The narwhal looks like a cross between a whale and a unicorn with its long, spiraled tusk jutting from its head. Males most commonly have tusks, and some may even have two. The tusk, which can grow as long as 10 feet, is actually an enlarged tooth. </p>
+                    <p>Ongoing research by WWF collaborators indicates that the tusk has sensory capability, with up to 10 million nerve endings inside. The tusk may also play a role in the ways males exert dominance.</p>
+                    <p>Narwhals spend their lives in the Arctic waters of Canada, Greenland, Norway and Russia. The majority of the world’s narwhals winter for up to five months under the sea ice in the Baffin Bay-Davis Strait area (between Canada and western Greenland). Cracks in the ice allow them to breathe when needed, especially after dives, which can be up to a mile and a half deep. They feed mainly on Greenland halibut, along with other fish, squid and shrimp.</p>
+                </div>
+                <div>
+                    <img class="img-habitat" src="./static/unnamed.png" alt="Narwhals habitat" >
+                </div>
+            </div>
+        </div>
+        <div class="threats">
+            <div>
+                <div class="page-title">
+                    <hr class="page-title-line">
+                    <h2 class="threats-header">THREATS</h2>
+                    <hr class="page-title-line">
+                </div>
+                <div class="danger-content">
+                    <div class="image-threats-content">
+                        <img class="img-threats" src="./static/narwhal_02.jpg" alt="Swimming narwhals" >
+                    </div>
+                    <div class="danger-content-text">
+                        <div class="threaths-text-border">
+                            <h3>OIL AND GAS DEVELOPMENT</h3>
+                            <p class="threats-text">Vessels that support oil and gas development mean increased shipping in sensitive areas. Increased shipping means more noise that can mask communications for many Arctic marine species and it increases the potential for collisions with marine mammals, especially whales. It also brings more pollution and a greater possibility of oil or fuel spills.</p>
+                        </div>
+                        <div class="">
+                            <h3>OCEAN NOISE</h3>
+                            <p class="threats-text">Shipping, industrial extraction, marine construction and military activities cause underwater noise pollution. Since whales depend on sound to communicate, any interference by noise pollution can negatively affect their ability to find food and mates, navigate, avoid predators and take care of their young.</p>
+                        </div>
+                        <div class="threaths-text-border">
+                            <h3>CLIMATE CHANGE</h3>
+                            <p class="threats-text">Thousands of years of evolution have prepared Arctic species like the polar bear, walrus and narwhal for life on and around the sea ice. Because of climate change, that ice cover has been changing rapidly, in both extent and thickness, and shrinking far too quickly for these species to adapt. A narwhal’s entire life is connected to sea ice, both as a place to feed and a place to take refuge. Slow swimming whales rely on sea ice as a place to hide from predators like killer whales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="page-title">
+                <hr class="page-title-line">
+                <h2>FAQ</h2>
+                <hr class="page-title-line">
+            </div>
+            <div class="faq-content">
+                <div>
+                    <div class="faq-content-text">
+                        <h4>What do narwhals eat?</h4>
+                        <p class="answer">Narwhals feed on Greenland halibut, Arctic and polar cod, squid and shrimp. They do their chomping at the ice floe edge and in the ice-free summer waters.</p>
+                    </div>
+                    <div>
+                        <img class="img-faq" src="./static/narwals-eat.jpg" alt="Narwhals swimming" >
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-content-text">
+                        <h4>What is a narwhal tusk?</h4>
+                        <p class="answer">The narwhal tusk—most commonly found on males—is actually an enlarged tooth with sensory capability and up to 10 million nerve endings inside. Some narwhals have up to two tusks, while others have none. The spiraled tusk juts from the head and can grow as long at 10 feet.</p>
+                    </div>
+                    <div>
+                        <img class="img-faq" src="./static/tusk.jpg" alt="Narwhals on the shore" >
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-content-text">
+                        <h4>How deep do narwhals dive?</h4>
+                        <p class="answer">Narwhals can dive about a mile deep in the ocean. Cracks in the sea ice above allow them to pop up for air when they need it.</p>
+                    </div>
+                    <div>
+                        <img class="img-faq" src="./static/dive.jpg" alt="Narwhals swimming" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h6>&copy; Copyright Nadzeya Tumarava - student # 301446447 - COMP213 Winter 2024 - Web Interface Design. Assignment #2.</</h6>
+        <br>
+            <div>
+                Pictures and information were taken from: 
+                <a href="https://www.worldwildlife.org/" target="_blank" title="WorldWildLife">
+                    <img class="wwf-logo" src="./static/WWF_logo.png" alt="WWF logo">
+                </a>
+            </div>
+    </footer>
+</body>
+</html>
