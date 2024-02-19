@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    font-family: "Poppins", Geneva, Tahoma, sans-serif;
+    margin: 0;
+    --logo-shift: 70px;
+    --logo-width: 252px;
+    background-color: #f4f4f4;
+}
+main {
+    padding: 2em;
+    width: 980px;
+    margin: 0 auto;
+}
+h1 {
+    text-shadow: 4px 4px 0 rgba(0,0,0,.07);
+    font-size: 3rem;
+    font-weight: 500;
+}
+h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 3em 0;
+}
+h3 {
+    text-shadow: 4px 4px 0 rgba(0,0,0,.07);
+    color: #444;
+    font-size: 18px;
+    font-weight: 700;
+}
+h6 {
+    font-weight: 200;
+}
+p {
+    font-weight: 100;
+}
+footer {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    color: #000000;  
+}
+.nav-item {
+    background-color: #fff;
+    margin: 0;
+    width: 100%;
+    position: sticky;
+}
+.nav-primary {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0;
+    margin-left: calc(var(--logo-shift) + var(--logo-width));
+    padding: 1rem 2rem;
+}
+.nav-element {
+    list-style: none;
+}
+.nav-link {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 10px;
+    text-align: center;
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    cursor: pointer;
+    background-color: #2c509e;
+    border-radius: 9px;
+    color: #fff;
+    outline: none;
+    fill: #fff;
+}
+.back-icon {
+    width: 20px;
+    height: 20px;
+}
+.head-pict {
+    width: 100%;
+}
+.nav-pict {
+    height: 158px;
+    width: var(--logo-width, 252px);
+    position: absolute;
+    top: -35px;
+    left: var(--logo-shift, 70px);
+    z-index: 2;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.main-content-video  {
+    width: 500px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 8px;
+}
+.main-decription {
+    text-align: justify;
+}
+.wwf-logo {
+    width: 28px;
+}
+
+.bigger-image {
+    text-transform: uppercase;
+    padding: 1em 10em;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+table {
+    width: 100%;
+    margin: 2em 0;
+    border-collapse: collapse;
+}
+.parameters {
+    visibility: hidden;
+}
+th, td {
+    font-weight: 300;
+}
+td {
+    border-bottom: solid 1px;
+    text-align: center;
+    padding: 0 1em;
+}
+caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 28px;
+    padding: 1em 0;
+}
+.table-image {
+    height: 195px;
+    margin: 1em auto;
+}
+.table-pixel-image {
+    height: 165px;
+}
+.image-cell {
+    border: none;
+}
+tr > th:first-child {
+    text-align: left;
+    padding: 2em 0;
+    padding-right: 3em;
+    padding-left: 1em;
+}
+tr:nth-child(even) {
+    background-color: #bebdbd2e;
+}
+.map-image {
+    width: 700px;
+}
