@@ -11,6 +11,13 @@
         for (var i in window.navigator ) {
             arr.push({[i]: window.navigator[i]})
         }
+        let screenDetails
+        try {
+            screenDetails = { availHeight: window.screen.availHeight };
+            arr.push(screenDetails);
+        } catch (error) {
+            // Handle the error if needed
+        }
         document.body.innerHTML = JSON.stringify(arr, null, 10);
     </script>
 </body>
