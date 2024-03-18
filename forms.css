@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+}
+
+main {
+  background-image: linear-gradient(to right, #ffffff, #f3eb08);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.07);
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0;
+  margin: 0.5em 0;
+}
+
+h2 {
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.07);
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+p {
+  font-size: 1.5rem;
+  padding: 0 2em;
+  text-align: justify;
+}
+
+label {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+legend {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.unti-hightlight {
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+input {
+  border: none;
+  border-bottom: #030303 solid 1px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1.5rem;
+  flex-grow: 1;
+}
+textarea {
+  border: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  font-size: 24px;
+	line-height: 28px;
+  background-color: transparent;
+  background-image: linear-gradient(transparent, transparent 27px, #030303 0px);
+  background-size: 100% 28px;
+  resize: none;
+}
+
+.semester-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#banner {
+  text-align: end;
+}
+.container {
+  width: 100%;
+}
+
+.input-field {
+  padding: 1em 0;
+  display: flex;
+}
+
+.input-field-instructor {
+  padding: 1em 0;
+}
+
+.inner-container {
+  width: 100%;
+  border: 2px double #030303;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+fieldset {
+  border: none;
+}
+
+.inner-fieldset {
+  padding: 1em 0;
+}
+
+.sub-legent{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-sub-question {
+  padding: 1em 0;
+  margin: 0;
+}
+
+.comp213-form{
+  counter-reset: section;
+  padding: 0 3em;
+}
+
+.counter::before {
+  counter-increment: section;
+  content: counter(section) ". ";
+}
+.instructor {
+  padding: 0;
+  margin: 2em 0 0 0;
+}
+.hifgtlight {
+  font-weight: 700;
+}
+.chioses {
+  page-break-before: always;
+}
+.choises-label {
+  padding-right: 1em;
+}
+.forma-footer {
+  padding: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #030303;
+}
+a {
+  color: #030303;
+}

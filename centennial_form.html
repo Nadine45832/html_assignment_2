@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Nadzeya Tumarava - student # 301446447-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./static/smile.png">
+    <title>COMP213 - W24 - Web Interface Design - Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="inner-container"> 
+            <div id="banner">
+                <a href="https://www.centennialcollege.ca/" target="_blank">
+                    <img height="100px" src="/static/Centennial_College_Logo.jpg" alt="Banner Image">
+                </a>
+            </div>
+            <h1>CENTENNIAL COLLEGE</h1>
+            <h2>Continuing Education Course/Instruction Evaluation</h2>
+            <p>
+                Please read each statement carefully and consider each one individually. Use the <span class="hifgtlight">computer card</span> to make your choice (use a pencil to fill in the space). Give only <span class="hifgtlight">one answer</span> for each question.
+            </p>
+            <form name="comp213-form" class="comp213-form" id="comp213-id-form" method="post" action="mailto:ntumarav@my.centennialcollege.ca">
+                <div class="input-field">
+                    <label for="id_name_info">Course Name/Code:</label>
+                    <input name="name_info" id="id_name_info" required>
+                </div>
+                <div class="input-field semester-form">
+                    <div class="semester-pick">
+                        <label id="semester-label">Semester:</label>
+                        <input aria-labelledby="semester-label" type="radio" id="fall" name="semester" value="fall" checked />
+                        <label class="choises-label" for="fall">Fall</label>
+
+                        <input aria-labelledby="semester-label" type="radio" id="winter" name="semester" value="winter" />
+                        <label class="choises-label" for="winter">Winter</label>
+
+                        <input aria-labelledby="semester-label" type="radio" id="spring-summer" name="semester" value="spring-summer" />
+                        <label class="choises-label" for="spring-summer">Spring/Summer</label>
+                    </div>
+                    <div class="year">
+                        <label for="id_year_info">Year:</label>
+                        <input type="number" name="year_info" id="id_year_info" required>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label for="id_instructor_info">Instructor:</label>
+                    <input name="instructor_info" id="id_instructor_info" required>
+                </div>
+                
+                <fieldset class="instructor">
+                    <legend class="sub-legent">Instructor</legend>
+                    <p class="form-sub-question">How would your rate the instructor's:</p>
+                    <div class="input-field-instructor">
+
+                            <label class="counter" id="knowledge-label"><span class="hifgtlight">knowledge</span> of the subject?</label>
+                            <div class="choises">
+                                
+                                <input aria-labelledby="knowledge-label" type="radio" id="exelent" name="knowledge" value="exelent" checked />
+                                <label class="choises-label" for="exelent">(a) Exelent</label>
+        
+                                <input aria-labelledby="knowledge-label" type="radio" id="good" name="knowledge" value="good" />
+                                <label class="choises-label" for="good">(b) Good</label>
+        
+                                <input aria-labelledby="knowledge-label" type="radio" id="fair" name="knowledge" value="fair" />
+                                <label class="choises-label" for="fair">(c) Fair</label>
+
+                                <input aria-labelledby="knowledge-label" type="radio" id="not-satisfactory" name="knowledge" value="not-satisfactory" />
+                                <label class="choises-label" for="not-satisfactory">(d) Not Satisfactory</label>
+                            </div>
+                    </div>
+                    <div class="input-field-instructor">
+                        <label class="counter" id="helpfulness-label"><span class="hifgtlight">helpfulness?</span></label>
+                        <div class="choises">
+                            
+                            <input aria-labelledby="helpfulness-label" type="radio" id="exelent" name="helpfulness" value="exelent" checked />
+                            <label class="choises-label" for="exelent">(a) Exelent</label>
+    
+                            <input  aria-labelledby="helpfulness-label" type="radio" id="good" name="helpfulness" value="good" />
+                            <label class="choises-label" for="good">(b) Good</label>
+    
+                            <input aria-labelledby="helpfulness-label" type="radio" id="fair" name="helpfulness" value="fair" />
+                            <label class="choises-label" for="fair">(c) Fair</label>
+
+                            <input aria-labelledby="helpfulness-label" type="radio" id="not-satisfactory" name="helpfulness" value="not-satisfactory" />
+                            <label class="choises-label" for="not-satisfactory">(d) Not Satisfactory</label>
+                        </div>
+                    </div>
+                    <div class="input-field-instructor">
+                        <label class="counter" id="courtesy-respect-label"><span class="hifgtlight">courtesy and respect</span> for all students?</label>
+                        <div class="choises">
+    
+                            <input aria-labelledby="courtesy-respect-label" type="radio" id="exelent" name="respect" value="exelent" checked />
+                            <label class="choises-label" for="exelent">(a) Exelent</label>
+    
+                            <input aria-labelledby="courtesy-respect-label" type="radio" id="good" name="respect" value="good" />
+                            <label class="choises-label" for="good">(b) Good</label>
+    
+                            <input aria-labelledby="courtesy-respect-label" type="radio" id="fair" name="respect" value="fair" />
+                            <label class="choises-label" for="fair">(c) Fair</label>
+
+                            <input aria-labelledby="courtesy-respect-label" type="radio" id="not-satisfactory" name="respect" value="not-satisfactory" />
+                            <label class="choises-label" for="not-satisfactory">(d) Not Satisfactory</label>
+                        </div>
+                    </div>
+                    <div class="input-field-instructor"">
+                        <label class="counter" id="communication-label"><span class="hifgtlight">communication</span> skills?</label>
+                        <div class="choises">
+    
+                            <input aria-labelledby="communication-label" type="radio" id="exelent" name="communication-skills" value="exelent" checked />
+                            <label class="choises-label" for="exelent">(a) Exelent</label>
+    
+                            <input aria-labelledby="communication-label" type="radio" id="good" name="communication-skills" value="good" />
+                            <label class="choises-label" for="good">(b) Good</label>
+    
+                            <input aria-labelledby="communication-label" type="radio" id="fair" name="communication-skills" value="fair" />
+                            <label class="choises-label" for="fair">(c) Fair</label>
+
+                            <input aria-labelledby="communication-label" type="radio" id="not-satisfactory" name="communication-skills" value="not-satisfactory" />
+                            <label class="choises-label" for="not-satisfactory">(d) Not Satisfactory</label>
+                        </div>
+                    </div>
+                    <div class="input-field-instructor">
+                        <label class="counter" id="perfomance-label">overall <span class="hifgtlight">perfomance</span>?</label>
+                        <div class="choises">
+    
+                            <input aria-labelledby="perfomance-label" type="radio" id="exelent" name="overall-perfomance" value="exelent" checked />
+                            <label class="choises-label" for="exelent">(a) Exelent</label>
+    
+                            <input aria-labelledby="perfomance-label" type="radio" id="good" name="overall-perfomance" value="good" />
+                            <label class="choises-label" for="good">(b) Good</label>
+    
+                            <input aria-labelledby="perfomance-label" type="radio" id="fair" name="overall-perfomance" value="fair" />
+                            <label class="choises-label" for="fair">(c) Fair</label>
+
+                            <input aria-labelledby="perfomance-label" type="radio" id="not-satisfactory" name="overall-perfomance" value="not-satisfactory" />
+                            <label class="choises-label" for="not-satisfactory">(d) Not Satisfactory</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="instructor">
+                    <legend class="sub-legent">Course</legend>
+                    <div class="input-field-instructor">
+
+                            <label class="counter" id="course-materials-label">How would your rate the <span class="hifgtlight">course materials</span>?</label>
+                            <div class="choises">
+                                
+                                <input aria-labelledby="course-materials-label" type="radio" id="exelent" name="course-materials" value="exelent" checked />
+                                <label class="choises-label" for="exelent">(a) Exelent</label>
+        
+                                <input aria-labelledby="course-materials-label" type="radio" id="good" name="course-materials" value="good" />
+                                <label class="choises-label" for="good">(b) Good</label>
+        
+                                <input aria-labelledby="course-materials-label" type="radio" id="fair" name="course-materials" value="fair" />
+                                <label class="choises-label" for="fair">(c) Fair</label>
+
+                                <input aria-labelledby="course-materials-label" type="radio" id="not-satisfactory" name="course-materials" value="not-satisfactory" />
+                                <label class="choises-label" for="not-satisfactory">(d) Not Satisfactory</label>
+                            </div>
+                    </div>
+                    <div class="input-field-instructor">
+                        <label class="counter" id="expectations-label">How much did this course meet yout <span class="hifgtlight">expectations</span>?</label>
+                        <div class="choises">
+                            
+                            <input aria-labelledby="expectations-label" type="radio" id="exelent" name="expectations" value="exelent" checked />
+                            <label class="choises-label" for="exelent">(a) Exelent</label>
+    
+                            <input  aria-labelledby="expectations-label" type="radio" id="good" name="expectations" value="good" />
+                            <label class="choises-label" for="good">(b) Good</label>
+    
+                            <input aria-labelledby="expectations-label" type="radio" id="fair" name="expectations" value="fair" />
+                            <label class="choises-label" for="fair">(c) Fair</label>
+
+                            <input aria-labelledby="expectations-label" type="radio" id="not-satisfactory" name="expectations" value="not-satisfactory" />
+                            <label class="choises-label" for="not-satisfactory">(d) Not Satisfactory</label>
+                        </div>
+                    </div>
+                    <div class="input-field-instructor">
+                        <label class="counter" id="course-overall-label">How would your rate this course (<span class="hifgtlight">overall</span>)?</label>
+                        <div class="choises">
+    
+                            <input aria-labelledby="course-overall-label" type="radio" id="exelent" name="course-overall" value="exelent" checked />
+                            <label class="choises-label" for="exelent">(a) Exelent</label>
+    
+                            <input aria-labelledby="course-overall-label" type="radio" id="good" name="course-overall" value="good" />
+                            <label class="choises-label" for="good">(b) Good</label>
+    
+                            <input aria-labelledby="course-overall-label" type="radio" id="fair" name="course-overall" value="fair" />
+                            <label class="choises-label" for="fair">(c) Fair</label>
+
+                            <input aria-labelledby="course-overall-label" type="radio" id="not-satisfactory" name="course-overall" value="not-satisfactory" />
+                            <label class="choises-label" for="not-satisfactory">(d) Not Satisfactory</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="instructor">
+                    <legend class="sub-legent">General Information</legend>
+                    <div class="input-field-instructor">
+
+                            <label class="counter" id="course-outline-label">Was the <span class="hifgtlight">course outline</span> reviewed/explained at the beginning of your course?</label>
+                            <div class="choises">
+                                
+                                <input aria-labelledby="course-outline-label" type="radio" id="yes" name="course-outline" value="yes" checked />
+                                <label class="choises-label" for="yes">(a) Yes</label>
+        
+                                <input aria-labelledby="course-outline-label" type="radio" id="no" name="course-outline" value="no" />
+                                <label class="choises-label" for="no">(b) No</label>
+        
+                                <input aria-labelledby="course-outline-label" type="radio" id="not-sure" name="course-outline" value="not-sure" />
+                                <label class="choises-label" for="not-sure">(c) Not Sure</label>
+                            </div>
+                    </div>
+                    <div class="input-field-instructor">
+                        <label class="counter" id="recommend-course-label">Would you <span class="hifgtlight">recommend</span> this course to a friend with the same interests?</label>
+                        <div class="choises">
+                            
+                            <input aria-labelledby="recommend-course-label" type="radio" id="yes" name="recommend-course" value="yes" checked />
+                            <label class="choises-label" for="yes">(a) Yes</label>
+    
+                            <input  aria-labelledby="recommend-course-label" type="radio" id="no" name="recommend-course" value="no" />
+                            <label class="choises-label" for="no">(b) No</label>
+    
+                            <input aria-labelledby="recommend-course-label" type="radio" id="not-sure" name="recommend-course" value="not-sure" />
+                            <label class="choises-label" for="not-sure">(c) Not Sure</label>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="instructor">
+                    <legend class="sub-legent">ANY OTHER COMMENTS <span class="unti-hightlight">(please use the back of the computer card or this paper if necessary)</span></legend>
+                    <div class="input-field">
+
+                            <label class="counter" for="id_best_thing_info">What is the <span class="hifgtlight">best thing</span> about this course?</label>
+                            <input name="best_thing_info" id="id_best_thing_info" required>
+                    </div>
+                    <div class="input-field">
+                        <label class="counter" for="id_improve_course_info">How could we <span class="hifgtlight">improve</span> this course?</label>
+                        <input name="improve_course_info" id="id_improve_course_info" required>
+                    </div>
+                    <div class="input-field">
+                        <label class="counter" for="id_other_info">Other:</label>
+                        <textarea rows="4" name="other_info" id="id_other_info" required></textarea>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="forma-footer">
+                <div>
+                    Thank you! We pay attention to your feedback!
+                </div>
+                <div>
+                    Web: <a target="_blank" href="www.centennialcollege.ca/continuing">www.centennialcollege.ca/continuing</a> education 
+                    Email: <a href="mailto:continuededucation@centennialcollege.ca">continuededucation@centennialcollege.ca</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</html>
