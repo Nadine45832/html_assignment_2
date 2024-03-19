@@ -99,6 +99,48 @@ textarea {
   padding: 1em 0;
 }
 
+.nav-item {
+  background-color: #fff;
+  margin: 0;
+  width: 100%;
+  position: sticky;
+}
+.nav-primary {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 0;
+  margin-left: calc(var(--logo-shift) + var(--logo-width));
+  padding: 1rem 2rem;
+}
+.nav-element {
+  list-style: none;
+}
+.nav-link {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1dvb;
+  text-align: center;
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link:hover, .nav-link:focus {
+  cursor: pointer;
+  background-color: #1a1b19;
+  border-radius: 20px;
+  color: #fff;
+  outline: none;
+  fill: #fff;
+}
+.back-icon {
+  width: 20px;
+  height: 20px;
+}
 .inner-container {
   width: 100%;
   border: 2px double #030303;
