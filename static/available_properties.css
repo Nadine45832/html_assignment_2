@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: rgb(239, 240, 242);
+    --logo-shift: 70px;
+    --logo-width: 100px;
+    --header-height: 106px;
+    --footer-height: 71px
+}
+h1 {
+    color: #050505;
+    text-align: center;
+    margin: 2em 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: red;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+main {
+    overflow: hidden;
+    min-height: calc(100vh - var(--footer-height) - var(--header-height));
+}
+
+footer {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    height: var(--footer-height);
+}
+
+.head-pict {
+    width: 100%;
+}
+.nav-item {
+    background-color: #fdfefc;
+    margin: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    height: var(--header-height);
+}
+
+.nav-primary {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0;
+    margin-left: calc(var(--logo-shift) + var(--logo-width));
+    padding: 1.5rem 2rem;
+}
+.nav-element {
+    list-style: none;
+}
+.nav-link {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 7px 5px;
+    text-align: center;
+    display: block;
+}
+
+.nav-link:hover, .nav-link:focus {
+    cursor: pointer;
+    background-color: #27252531;
+    outline: none;
+    border-radius: 0;
+    color: red;
+}
+
+.nav-pict {
+    height: 83px;
+    width: var(--logo-width, 100px);
+    position: absolute;
+    top: 0;
+    border: none;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.loading-out {
+    margin-bottom: 5em;
+}
+.listing {
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.property-link {
+    text-decoration: none;
+}
+.wrapper {
+    margin-top: 3em;
+}
+
+.listing-card {
+    margin: 0 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    width: 290px;
+    max-width: 290px;
+    background-color: #fff;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.listing-card-image {
+    width: 280px;
+    height: 200px;
+    margin: auto;
+}
+
+.listing-image {
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    vertical-align: middle;
+    width: 256px;
+    height: 200px;
+}
+
+.listing-card-body {
+    padding: 15px;
+}
+.listing-card-price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    overflow: hidden;
+    height: 30px;
+    display: block;
+    white-space: nowrap;
+    color: #1c7e97;
+}
+
+.listing-card-adr {
+    font-size: 1rem;
+    color: #000000;
+    padding-top: 1em;
+    line-height: 1.2em;
+    max-height: 3.6em;
+}
+
+.listing-card-icon-strip {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 0;
+    color: #666;
+    margin-top: 7px;
+    gap: 3em;
+}
+
+.img-icon {
+    width: 26px;
+}
+
+.listing-card-icon {
+    text-align: center;
+}
+.listing-card-icon-top {
+    text-align: center;
+}
+
+.listing-card-icon-num {
+    display: inline-block;
+    vertical-align: top;
+}
+.property-card-bed-icon {
+    text-align: center;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.listing-card-icon-text {
+    font-size: .75rem;
+}
+
+.listing-card-name {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    padding: 1em 0;
+    text-align: left;
+}

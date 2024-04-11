@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Nadzeya Tumarava - student # 301446447-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./images/RoyalLePage.png" >
+    <link href="./static/home.css" rel="stylesheet" >
+    <title>Real Estate Agent</title>
+</head>
+<body>
+    <nav class="nav-item">
+        <a href="https://www.royallepage.ca/en/" target="_blank">
+            <img class="nav-pict" src="./images/RoyalLePage.png" alt="A narwhal swimming" >
+        </a>
+        <ul class="nav-primary" >
+            <li class="nav-element">
+                <a href="./home.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="./available_properties.html" class="nav-link">
+                    Available Properties
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="./contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+            <li class="nav-element">
+                <a href="./sitemap.html" class="nav-link" >
+                    Site Map and Credits
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <main>
+        <div class="head-block">
+            <img  class="head-pict" src="./images/toronto.jpg" alt="Toronto's street cars">
+            <h1 class="main-header">Welcome to Our Real Estate Website</h1>
+        </div>
+        <section>
+            <hr class="page-title-line">
+            <h2 class="subheader-style">Meet your <span class="highlight">RoyalLePage</span> Agent </h2>
+
+            <!-- Agent's Picture and Information -->
+            <div class="agent-section">
+                <div>
+                    <img src="./images/AgentPic.jpg" alt="Agent's Picture">
+                    <p><strong>Mission Statement:</strong></p>
+                    <p>Delivering exceptional real estate experiences.</p>
+                </div>
+                <div class="second-content-text">
+                    <h3>Hiren Bharucha</h3>
+                    <h4>Sales Representative</h4>
+                    <p>
+                        Hiren has been an active member of the local community for 12 years. He brings more than 10 years of Retail Business Experience. Hiren's background as a real estate investor offers the opportunity to meld his passion for real estate with a commitment to helping community residents.
+                    </p>
+                    <p>
+                        As a proud member of "TEAM SHAILESH", Hiren carries the values of hard work, integrity, and outstanding client services into everything he does.
+                    </p>
+                </div>
+                <div class="form-content">
+                    <h4>Contact Hiren Bharucha</h4>
+                    <form action="mailto:tumarevanadya@gmail.com" method="post" enctype="text/plain">
+                        <div class="input-field">
+                            <label class="font-input-label" for="fname">First Name:</label>
+                            <input class="form-input" type="text"  name="fname" id="fname" required>
+                        </div>
+                        <div class="input-field">
+                            <label class="font-input-label" for="lname">Last Name:</label>
+                            <input class="form-input" type="text"  name="lname" id="lname" required>
+                        </div>
+                        <div class="input-field">
+                            <label  class="font-input-label" for="memail">Email:</label>
+                            <input class="form-input" type="email"  name="memail" id="memail" required>
+                        </div>
+                        <div class="input-field">
+                            <label class="font-input-label" for="id_message">Message:</label>
+                            <textarea class="form-input-textarea" rows="4" name="Message" id="id_message" required></textarea>
+                        </div>
+                        
+                        <input class="btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="property-section-stl">
+                <h2 class="sub-header-str"><span class="highlight">RoyalLePage</span> CONDOS PLUS YOUR </h2>
+                <h2 class="sub-header-str">TORONTO CONDO EXPERTS</h2>
+                <p class="content-top">
+                    Your first stop for Toronto real estate, market insights and buyer and seller resources. RoyalLePage Condos Plus agents are seasoned industry experts who pride themselves on their service and commitment to you. That's why there is only one place to go for all your condo and loft needs.
+                </p>
+
+                <div>
+                    <h2 class="property-section-stl">Hiren 's Featured Listings</h2>
+
+                    <div class="property-section">
+                        <div class="img-container" data-fwd-listing-item-container="slider">
+                            <a href="./property1.html">
+                                <div class="overlay">
+                                    <div>
+                                        <img class="property-img" src="./images/house1.jpg" alt="property 1">
+                                    </div>
+                                    <span class="sp-sale">For Sale</span>
+                                </div>
+                            </a>
+                            <div class="text-pr-container">Property 1</div>
+                            <div class="btn-img-container">
+                                <a class="btn" href="./property1.html">Details ></a>
+                            </div>
+                        </div>
+                        <div class="img-container" data-fwd-listing-item-container="slider">
+                            <a href="./property2.html">
+                                <div class="overlay">
+                                    <div>
+                                        <img class="property-img" src="./images/house2.jpg" alt="property 2">
+                                    </div>
+                                    <span class="sp-sale">For Sale</span>
+                                </div>
+                            </a>
+                            <div class="text-pr-container">Property 2</div>
+                            <div class="btn-img-container">
+                                <a class="btn" href="./property2.html">Details ></a>
+                            </div>
+                        </div>
+                        <div class="img-container" data-fwd-listing-item-container="slider">
+                            <a href="./property3.html">
+                                <div class="overlay">
+                                    <div>
+                                        <img class="property-img" src="./images/house3.jpg" alt="property 3">
+                                    </div>
+                                    <span class="sp-sale">For Sale</span>
+                                </div>
+                            </a>
+                            <div class="text-pr-container">Property 3</div>
+                            <div class="btn-img-container">
+                                <a class="btn" href="./property3.html">Details ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Real Estate Agent. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
