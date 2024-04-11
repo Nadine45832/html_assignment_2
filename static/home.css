@@ -275,3 +275,39 @@ footer {
     display: flex;
     justify-content: end;
 }
+
+.agent-reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.agent-review {
+    padding: 36px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 rgba(60,65,140,.08), 0 5px 15px 0 rgba(60,65,140,.1);
+    background-color: #fff;
+    max-width: 600px;
+    min-height: 100%;
+
+}
+
+.agent-review-avatar-image {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.agent-review-person {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.agent-review-name {
+    font-weight: bold;
+    line-height: 2em;
+}
